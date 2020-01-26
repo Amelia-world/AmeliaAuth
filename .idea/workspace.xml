@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0bba3b4-ca9c-4296-a32e-39b912152863" name="Default Changelist" comment="" />
+    <list default="true" id="f0bba3b4-ca9c-4296-a32e-39b912152863" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/kotypey/ameliaauth/utils/PlayerUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/kotypey/ameliaauth/utils/PlayerUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -94,22 +101,26 @@
       <screen x="0" y="0" width="1280" height="984" />
     </state>
     <state x="445" y="202" key="#com.intellij.ide.util.MemberChooser/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1579988149032" />
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1580061294591">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom" timestamp="1580071302833">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580061294591" />
-    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1580061294591">
+    <state width="1237" height="263" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580071302833" />
+    <state width="1237" height="263" key="GridCell.Tab.0.center" timestamp="1580071302833">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580061294591" />
-    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1580061294591">
+    <state width="1237" height="263" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580071302833" />
+    <state width="1237" height="263" key="GridCell.Tab.0.left" timestamp="1580071302832">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580061294591" />
-    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1580061294591">
+    <state width="1237" height="263" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580071302832" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right" timestamp="1580071302833">
       <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1237" height="263" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580061294591" />
+    <state width="1237" height="263" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580071302833" />
+    <state x="336" y="317" key="com.intellij.ide.util.TipDialog" timestamp="1580070627770">
+      <screen x="0" y="0" width="1280" height="984" />
+    </state>
+    <state x="336" y="317" key="com.intellij.ide.util.TipDialog/-1920.0.1536.832/0.0.1280.984@0.0.1280.984" timestamp="1580070627770" />
     <state x="296" y="226" key="run.anything.popup" timestamp="1580045590432">
       <screen x="0" y="0" width="1280" height="984" />
     </state>

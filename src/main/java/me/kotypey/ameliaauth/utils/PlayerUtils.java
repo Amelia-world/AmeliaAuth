@@ -17,8 +17,9 @@ public class PlayerUtils {
     public static boolean checkSession(Player p){
         try {
             PreparedStatement statement = PluginMySQL.mySQL.getConnection()
-                    .prepareStatement("SELECT lastip FROM users where UUID=?");
+                    .prepareStatement("SELECT lastip FROM users where (UUID=? or username=?)");
             statement.setString(1, p.getUniqueId().toString());
+            statement.setString(2, p.getName().toLowerCase());
             ResultSet resultSet = statement.executeQuery();
             resultSet.next();
             if(resultSet == null) return false;
@@ -33,8 +34,9 @@ public class PlayerUtils {
 
     public static String getPassword(Player p){
         try{
-            PreparedStatement statement = PluginMySQL.mySQL.getConnection().prepareStatement("SELECT password FROM users where UUID=?");
+            PreparedStatement statement = PluginMySQL.mySQL.getConnection().prepareStatement("SELECT password FROM users where (UUID=? or username=?)");
             statement.setString(1,p.getUniqueId().toString());
+            statement.setString(2, p.getName().toLowerCase());
             ResultSet results = statement.executeQuery();
             results.next();
             return results.getString("password");
@@ -49,8 +51,9 @@ public class PlayerUtils {
     public static boolean isExists(Player p){
         try {
             PreparedStatement statement = PluginMySQL.mySQL.getConnection()
-                    .prepareStatement("SELECT * FROM users where UUID=?");
+                    .prepareStatement("SELECT * FROM users where (UUID=? or username=?)");
             statement.setString(1, p.getUniqueId().toString());
+            statement.setString(2, p.getName().toLowerCase());
             ResultSet resultSet = statement.executeQuery();
             if(resultSet.next()){
                 return true;
@@ -65,9 +68,10 @@ public class PlayerUtils {
 
     public static void register(Player p, String password){
         try {
+
             PreparedStatement statement = PluginMySQL.mySQL.getConnection()
                     .prepareStatement("INSERT INTO users(username, password,privileges, UUID) VALUES(?,?,?,?)");
-            statement.setString(1, p.getName());
+            statement.setString(1, p.getName().toLowerCase());
             statement.setString(2, PasswordUtils.encrypt(password));
             statement.setInt(3, 3);
             statement.setString(4, p.getUniqueId().toString());
@@ -87,7 +91,10 @@ public class PlayerUtils {
     public static void setSession(Player p){
         try {
             PreparedStatement statement = PluginMySQL.mySQL.getConnection()
-                    .prepareStatement("UPDATE users SET lastip=\"" +  p.getAddress().getHostString() + "\" where UUID=\"" + p.getUniqueId().toString() +"\"");
+                    .prepareStatement("UPDATE users SET lastip=? where (UUID=? or username=?)");
+            statement.setString(1, p.getAddress().getHostString());
+            statement.setString(2, p.getUniqueId().toString());
+            statement.setString(3, p.getName().toLowerCase());
             statement.executeUpdate();
         } catch (SQLException e) {
             p.kickPlayer(ChatColor.RED + "Ошибка при установке сесии, подробности ниже:\n " + e.getMessage());
