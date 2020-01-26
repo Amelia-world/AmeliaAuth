@@ -6,7 +6,7 @@
 - Версия Paper Spigot выше 1.12.2
 
 
-AmeliaUtils на данный момент приватный, за покупкой писать мне в <a href="https://vk.com/amelia.world">VK</a> или же в <a href="https://discord.gg/89aABYW">Discord</a>
+AmeliaUtils на данный момент приватный, за получением писать мне в <a href="https://vk.com/amelia.world">VK</a> или же в <a href="https://discord.gg/89aABYW">Discord</a>
 
 *Удачи*
 
