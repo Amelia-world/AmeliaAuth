@@ -1,5 +1,0 @@
-name: AmeliaAuth
-version: 1.0
-main: me.kotypey.ameliaauth.Plugin
-softdepend:
-  - AmeliaUtils
